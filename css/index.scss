@@ -1,0 +1,278 @@
+$blanco: #ffffff;
+$oscuro: #242424;
+$negro-claro: #272626;;
+$primario: #00B69D;
+$secundario: #005FF3;
+
+$fuente-principal-tamaño: 3.8rem;
+$fuente-principal: 'Poppins';
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-snap-type: y mandatory;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+body{
+    font-size: 1.6rem;
+    font-family: 'Poppins';
+}
+
+header{
+    background-color: $negro-claro;
+    height: auto;
+    margin-top: -2.5rem;
+    padding-top: 1rem;
+    text-align: center;
+}
+
+header span {
+    padding-left: 1.5rem;
+}
+
+h1{
+    font-size: $fuente-principal-tamaño;
+}
+
+h2{
+    font-size: $fuente-principal-tamaño;
+}
+
+h3{
+    font-size: 1.8rem;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+.boton{
+    background-color: $oscuro;
+    height: 2rem;
+    padding: 2rem 2rem;
+    margin-top: 1rem;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.boton:hover{
+    background-color: $secundario;
+    color: $blanco;
+    
+}
+
+.titulo{
+    text-align: center;
+    color: $primario;
+    font-family: $fuente-principal;
+}
+
+.titulo span{
+    font-size: 2rem;
+}
+
+.titulo-texto{
+    color: $blanco;
+}
+
+.nav-bg{
+    background-color: $secundario;
+    margin-top: -2.6rem;
+}
+
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.navegacion-principal{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 0.5rem;
+}
+
+.navegacion-principal a{
+    display: block;
+    color: ($blanco);
+    text-decoration: none;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+}
+
+.navegacion-principal a:hover{
+    background-color: $primario;
+    border-radius: 1.5rem;
+}
+
+.hero{
+    background-image: url(../img/desarrollador.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 1rem;
+    height: 55rem;
+    border: 0.2rem solid $oscuro;
+}
+
+.contenido-hero{
+    position: absolute;
+    background-color: $primario;
+    margin-top: -1rem;
+    width: 100%;
+    height: 55rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero a{
+    color: $blanco;
+    text-decoration: none;
+}
+
+.contenido-hero h2, .contenido-hero p{
+    color: $blanco;
+}
+
+.ubicacion {
+    display: flex;
+    align-items: center;
+}
+
+main{
+    position: relative;
+    border: 0.2rem solid $oscuro;
+}
+
+#servicios{
+    background-color: $secundario;
+    padding-top: 1rem;
+    border: 0.2rem solid $oscuro;
+}
+
+#servicios h2{
+    color: $blanco;
+}
+
+.seccion-servicios{
+    width: 100%;
+    height: 55rem;
+    overflow: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    background-color: $primario;
+    border: 0.2rem solid $oscuro;
+}
+
+.seccion-servicios div{
+    width: 50rem;
+}
+
+.seccion-servicios div h3{
+    font-size: 3rem;
+    color: $blanco;
+}
+
+.seccion-servicios div p{
+    font-size: 2rem;
+    color: $blanco;
+}
+
+.seccion-formulario{
+    background-color: $secundario;
+    padding-top: 3rem;
+    border: 0.2rem solid #242424;
+    
+    
+    
+}
+
+.seccion-formulario h2{
+    padding-bottom: 2rem;
+    vertical-align: auto;
+    color: $blanco;
+}
+
+.formulario{
+    border: 0.2rem solid $oscuro;
+    outline: none;
+}
+
+.formulario textarea{
+    width: 100%;
+    height: 10rem;
+    border-radius: 1rem;
+    border: 0.2rem solid $oscuro;
+    background-color: $primario;
+    color: ($blanco);
+    padding-left: 1rem;
+}
+
+.formulario textarea::placeholder{
+    color: $blanco;
+}
+
+.formulario input{
+    width: 100%;
+    padding: 1.2rem;
+    border: 0.2rem solid ($oscuro); /* Black border */
+    border-radius: 1rem; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+.formulario div label{    
+    color: $blanco;
+}
+
+.formulario div input{
+    background-color: $primario;
+}
+
+.formulario div input::placeholder{
+    color: $blanco;
+}
+
+.formulario div input[type=submit]{
+    width: 100%;
+    background-color: $primario;
+    color: $blanco;
+}
+
+.formulario div input[type=submit]:hover{
+    background-color: $blanco;
+    color: $oscuro;
+}
+
+footer{
+    background-color: $oscuro;
+    color: $blanco;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .navegacion-principal{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 600px){
+    .formulario{
+        width: 75vw;
+        margin: auto;
+    }
+}
